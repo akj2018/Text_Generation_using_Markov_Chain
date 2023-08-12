@@ -6,15 +6,18 @@ Text Generation using Markov Chain in Python
 
 ## Description
 
-    1. Client type the shortened URL in the address bar of the browser (bit.ly/short_url)
-    2. Browser forwards the request to the bit.ly server
-    3. bit.ly server checks the database for short_url and fetches the associated long_url
-    4. bit.ly do not returns long_url but redirects to the orginal long_url
+    1. Take input data stored in a .txt file
+    2. Build Transition Table
+    3. Convert the transition table into probabilities
+    4. Train our model on the input data
+    5. Generate new text using the model
 
 ### Usage: 
 
-Don't have to remember long URLs
-
+<ul>
+    <li> Simple and effective way for generating new text.</li>
+    <li> Also, can be used as a way to autocomplete text </li>
+</ul>
 
 ### Installing
 
@@ -22,10 +25,10 @@ Don't have to remember long URLs
 
 ### Executing program
 
-   1. Download the Mini URL Shortner.ipynb on your system
+   1. Download the Simple Markov Chain Text Generator.ipynb on your system
    2. Run the following command in the download location on cmd
           ```
-               jupyter-notebook "Mini URL Shortner.ipynb"
+               jupyter-notebook "Simple Markov Chain Text Generator.ipynb"
           ``` 
    3. Run the cells in Jupyter notebook
       
@@ -33,34 +36,14 @@ Don't have to remember long URLs
 ## Authors
 
 [Akshay Jain](https://www.linkedin.com/in/akshay-jain-2022)
-
-## Version History
-
-* Version 01
-    * Random length (4-6) short url for any given long url
-    * Character set for short url includes (a-z)
-    * Utilized Python dictionary as a database to replicate backend (key = short URL and value = Long URL)
-    * Unique Shortend urls
-      
-* Version 02
-    * Character set expanded to include digits (0-9)
-
-* Version 03
-    * Added functionality to use generate custom short URLs using user-input keywords (optional) 
- 
-* Version 04
-    * Also update the long_url mapped to short url after added to the database
  
 ## Future Updates
 
-- [ ] Add a more advance character set
+- [ ] Integrate live chat data for realtime processing
 - [ ] Add GUI
-- [ ] Add Documentations
-- [ ] Add More Randomization 
+- [ ] Added autocomplete functionality for suggestions while searching
 
    
 ## References
 * Youtube
 * Google
-
-This project is licensed under the [Akshay Jain License - see the LICENSE.md file for details
